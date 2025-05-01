@@ -9,7 +9,6 @@ from torch.utils.data import DataLoader
 from glob import glob
 import math
 
-
 params = {
     'size':256,
     'batch_size': 8,
