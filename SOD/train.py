@@ -206,7 +206,7 @@ if __name__ == '__main__':
     valTransform = transforms.Compose([
         transforms.Normalize(mean=val_data['mean'], std=val_data['std']),
         transforms.Scale(params['size'],params['size'] ),
-        transforms.VToTensor()
+        transforms.ToTensor()
         ])
 
     
@@ -222,7 +222,7 @@ if __name__ == '__main__':
             transforms.RandomCropResize(10),
             transforms.Scale(params['size'],params['size']),
             transforms.RandomFlip(),
-            transforms.TToTensor()
+            transforms.ToTensor()
             ])
     train_set = datta.Dataset(dataname=params['dataname'],dataclass='train', img_ids=img_ids, transform=trainTransform)
     train_loader = torch.utils.data.DataLoader(
