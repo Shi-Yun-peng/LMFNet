@@ -25,6 +25,6 @@ The saliency detection result maps can be downloaded from the following link:
 
 
 ### Comparison 
-![Quantitative Comparison](./assets/Qualitative Comparison  .png)
+![Quantitative Comparison](./assets/Qualitative Comparison.png)
 
 
